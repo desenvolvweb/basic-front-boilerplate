@@ -1,0 +1,26 @@
+{
+  "name": "basic-front-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate básico para projetos front-end com ênfase em HTML/CSS.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desenvolvweb/basic-front-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desenvolvweb/basic-front-boilerplate/issues"
+  },
+  "homepage": "https://github.com/desenvolvweb/basic-front-boilerplate#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "sass": "^1.23.3"
+  }
+}

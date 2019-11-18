@@ -1,0 +1,45 @@
+// @see https://desenvolvimentoparaweb.com/css/css-breakpoints-maneira-correta/
+
+@mixin breakpoint($point) {
+  @if $point == small-only {
+    @media (max-width: 37.4375em) { // 599px
+      @content;
+    }
+  }
+
+  @else if $point == small-up {
+    @media (min-width: 37.5em) { // 600px
+      @content;
+    }
+  }
+
+  @else if $point == medium-only {
+    @media (max-width: 56.1875em) { // 899px
+      @content;
+    }
+  }
+
+  @else if $point == medium-up {
+    @media (min-width: 56.25em) { // 900px
+      @content;
+    }
+  }
+
+  @else if $point == large-only {
+    @media (max-width: 74.9375em) { // 1199px
+      @content;
+    }
+  }
+
+  @else if $point == large-up {
+    @media (min-width: 75em) { // 1200px
+      @content;
+    }
+  }
+
+  @else {
+    @media (min-width: ($point / 16) + 'em') {
+      @content;
+    }
+  }
+}
