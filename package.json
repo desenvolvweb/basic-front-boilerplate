@@ -4,6 +4,7 @@
   "description": "Boilerplate básico para projetos front-end com ênfase em HTML/CSS.",
   "main": "script.js",
   "scripts": {
+    "start": "npm run dev",
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },

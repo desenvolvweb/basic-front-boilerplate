@@ -15,8 +15,8 @@ Optamos por usar o [Parcel](https://pt.parceljs.org/), que é um bundler que ate
 | Comando         | O que faz?                   | Observação                     |
 | -------------   | -------------                | -----                          |
 | `npm install`   | Instala pacotes necessários  | **Execute isso primeiro!**     |
-| `npm run dev`   | Inicia o desenvolvimento     | Acesse `http://localhost:1234` |
-| `npm run build` | Faz build do site            | Vai para diretório `dist`      |
+| `npm start  `   | Inicia o desenvolvimento     | Acesse `http://localhost:1234` |
+| `npm run build` | Faz build do site            | Resultado na pasta `dist`      |
 
 ### Considerações
 
