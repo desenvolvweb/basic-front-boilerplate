@@ -41,14 +41,13 @@ $github-color   : #333;
 // Measures
 // ==========================================================================
 
-$max-width-global-raw: 780;
-$layout-module-size  : rem-calc(30);
-$max-width-global    : rem-calc($max-width-global-raw);
+$global-max-width-raw: 780;
+$global-max-width    : rem-calc($global-max-width-raw);
 
-$font-size-default   : rem-calc(20);
-$line-height-default : rem-calc(36);
-
-$global-radius       : rem-calc(6);
+$global-font-size  : rem-calc(18);
+$global-line-height: 1.5;
+$global-radius     : rem-calc(6);
+$global-module-size: rem-calc(30);
 
 
 
