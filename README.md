@@ -15,12 +15,12 @@ Optamos por usar o [Parcel](https://pt.parceljs.org/), que é um bundler que ate
 | Comando         | O que faz?                   | Observação                     |
 | -------------   | -------------                | -----                          |
 | `npm install`   | Instala pacotes necessários  | **Execute isso primeiro!**     |
-| `npm start  `   | Inicia o desenvolvimento     | Acesse `http://localhost:1234` |
+| `npm start`     | Inicia o desenvolvimento     | Acesse `http://localhost:1234` |
 | `npm run build` | Faz build do site            | Resultado na pasta `dist`      |
 
 ### Considerações
 
-Basicamente, você só precisa executar `npm run dev` e começar a mexer no HTML e Sass como se não houvesse amanhã -- o Parcel oferece _live reload_: sempre que qualquer alteração é feita, o navegador é atualizado instantaneamente no endereço do servidor que é levantado.
+Basicamente, você só precisa executar `npm start` e começar a mexer no HTML e Sass como se não houvesse amanhã -- o Parcel oferece _live reload_: sempre que qualquer alteração é feita, o navegador é atualizado instantaneamente no endereço do servidor que é levantado.
 
 Algo importante sobre estilos é que o arquivo `sass/style.scss` importa todos os demais (partials), então, sempre que criar um novo arquivo na estrutura, lembre-se de importá-lo.
 
