@@ -15,11 +15,11 @@ step() {
   echo "\n$main> $1$reset..."
 }
 
-check() {
+success() {
   echo "$success> ☑️  $1 $reset"
 }
 
-error () {
+error() {
   echo "$error> ❌ $1"
   exit 0
 }
@@ -29,26 +29,28 @@ step "Checking requirements"
 if ! exists git ; then
   error "Git is not installed"
 else
-  check "Git is installed"
+  success "Git is installed"
 fi
 
 if ! exists node ; then
   error "NodeJS is not installed"
 else
-  check "NodeJS is installed"
+  success "NodeJS is installed"
 fi
 
+step "Cloning BFB"
 if [ ! -d basic-front-boilerplate ]; then
-  step "Installing BFB"
   git clone https://github.com/desenvolvweb/basic-front-boilerplate
-  check
+  success
+else
+  success "BFB already cloned"
 fi
 
 cd basic-front-boilerplate
 
 step "Installing dependencies"
 npm install
-check
+success
 
 step "Running BFB"
 npm run dev
