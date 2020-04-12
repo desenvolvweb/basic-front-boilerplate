@@ -53,7 +53,8 @@ sub {
 // ==========================================================================
 
 body {
-  font-family: sans-serif;
+  font-family: Nunito, sans-serif;
+  font-size: $global-font-size;
 }
 
 // ::selection {

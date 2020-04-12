@@ -5,35 +5,42 @@
 // webfatorial
 // ==========================================================================
 
-$webfatorial-primary  : #157bad;
-$webfatorial-secondary: #06618c;
-$webfatorial-success  : #3cc368;
-$webfatorial-warning  : #f5a600;
-$webfatorial-error    : #ec5840;
-$webfatorial-gray-1   : #363636;
-$webfatorial-gray-2   : #4f4f4f;
-$webfatorial-gray-3   : #828282;
-$webfatorial-gray-4   : #bdbdbd;
-$webfatorial-gray-5   : #e0e0e0;
-$webfatorial-white    : #fcfcfc;
+$webfatorial-colors: (
+  'webfatorial-primary'  : #157bad,
+  'webfatorial-secondary': #06618c,
+  'webfatorial-success'  : #3cc368,
+  'webfatorial-warning'  : #f5a600,
+  'webfatorial-error'    : #ec5840,
+  'webfatorial-gray-1'   : #363636,
+  'webfatorial-gray-2'   : #4f4f4f,
+  'webfatorial-gray-3'   : #828282,
+  'webfatorial-gray-4'   : #bdbdbd,
+  'webfatorial-gray-5'   : #e0e0e0,
+  'webfatorial-white'    : #fcfcfc,
+);
+
 
 // dpw
 // ==========================================================================
 
-$dpw-primary  : #3da6c8;
-$dpw-secondary: darken(#3da6c8, 12%);
+$dpw-colors: (
+  'dpw-primary'   : #3da6c8,
+  'dpw-secondary' : darken(#3da6c8, 12%),
+);
 
-$text-color   : $webfatorial-gray-1;
 
 // Social Media
 // ==========================================================================
 
-$facebook-color : #3b5998;
-$twitter-color  : #00aced;
-$linkedin-color : #0077b5;
-$youtube-color  : #cd201f;
-$instagram-color: #e4405f;
-$github-color   : #333;
+$social-media-colors: (
+  'facebook'  : #3b5998,
+  'twitter'   : #00aced,
+  'linkedin'  : #0077b5,
+  'youtube'   : #cd201f,
+  'instagram' : #e4405f,
+  'github'    : #333,
+);
+
 
 
 
@@ -42,14 +49,12 @@ $github-color   : #333;
 // ==========================================================================
 
 $global-max-width-raw: 780;
-$global-max-width    : rem-calc($global-max-width-raw);
+$global-max-width    : rem($global-max-width-raw);
 
-$global-font-size  : rem-calc(18);
+$global-font-size  : rem(18);
 $global-line-height: 1.5;
-$global-radius     : rem-calc(6);
-$global-module-size: rem-calc(30);
-
-
+$global-radius     : rem(6);
+$global-module-size: rem(30);
 
 // ==========================================================================
 // Transitions

@@ -24,7 +24,7 @@ $rem-base: 16px !default;
 /// @param {Number|List} $values - One or more values to convert. Be sure to separate them with spaces and not commas. If you need to convert a comma-separated list, wrap the list in parentheses.
 /// @param {Number} $base [$rem-base] - The base value to use when calculating the `rem`. If you're using Foundation out of the box, this is 16px.
 /// @returns {List} A list of converted values.
-@function rem-calc($values, $base: $rem-base) {
+@function rem($values, $base: $rem-base) {
   $rem-values: ();
   $count: length($values);
 
@@ -47,7 +47,7 @@ $rem-base: 16px !default;
 @function -zf-bp-to-em($value) {
   // Pixel and unitless values are converted to rems
   @if unit($value) == 'px' or unit($value) == '' {
-    $value: rem-calc($value);
+    $value: rem($value);
   }
 
   // Then the value is converted to ems
