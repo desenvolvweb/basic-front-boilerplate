@@ -1,37 +1,23 @@
-*,
-*::before,
-*::after {
+html {
   box-sizing: border-box;
 }
 
+// @see: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// @see: https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/
 @media (prefers-reduced-motion: reduce), (update: slow) {
   *,
   ::before,
   ::after {
-    animation-delay: -1ms !important;
-    animation-duration: 1ms !important;
+    animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
-    background-attachment: initial !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0s !important;
-    transition-delay: 0s !important;
+    transition-duration: 0.001ms !important;
   }
-}
-
-html,
-body {
-  -webkit-font-smoothing: antialiased;
-
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.25),
-    only screen and (min-device-pixel-ratio: 1.25),
-    only screen and (min-resolution: 200dpi),
-    only screen and (min-resolution: 1.25dppx) {
-    -webkit-font-smoothing: subpixel-antialiased;
-  }
-}
-
-*:focus {
-  outline: none;
 }
 
 img,
