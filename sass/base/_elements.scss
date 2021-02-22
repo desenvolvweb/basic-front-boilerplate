@@ -61,6 +61,11 @@ sub {
   font-size: 50%;
 }
 
+// @see https://matthiasott.com/notes/focus-visible-is-here
+:focus:not(:focus-visible) {
+  outline: 0;
+}
+
 // ==========================================================================
 // Project specifics
 // ==========================================================================
@@ -69,6 +74,10 @@ body {
   font-family: Nunito, sans-serif;
   font-size: $global-font-size;
 }
+
+// Show focus styles on keyboard focus
+// :focus-visible {
+// }
 
 // ::selection {
 // }
