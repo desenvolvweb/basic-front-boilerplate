@@ -2,11 +2,13 @@ html {
   box-sizing: border-box;
 }
 
-// @see: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+// @see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+// @see https://www.nicchan.me/blog/tips-for-focus-styles/#consider-adding-a-little-bit-of-breathing-room
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  outline-offset: 0.25rem;
 }
 
 // @see: https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/
