@@ -6,6 +6,11 @@ Boilerplate básico para projetos front-end com ênfase em HTML e CSS.
 
 - Node.js
 
+## Indicações
+
+- nvm
+  - Execute `nvm use` para usar a versão Node recomendada para o projeto
+
 ## Uso
 
 Optamos por usar o [Parcel](https://pt.parceljs.org/), que é um bundler que atende ao objetivo do projeto, é rápido e não precisa de configuração. Então, o projeto tem suporte a [Sass](https://sass-lang.com/), suporte a JavaScript moderno com Babel e muitos mais.
