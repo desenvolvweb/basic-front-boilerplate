@@ -65,6 +65,7 @@ sub {
 
 // @see https://matthiasott.com/notes/focus-visible-is-here
 :focus:not(:focus-visible) {
+  box-shadow: none;
   outline: 0;
 }
 
@@ -72,20 +73,46 @@ sub {
 // Project specifics
 // ==========================================================================
 
+// @see https://twitter.com/argyleink/status/1413850241477005312
+:root {
+  --brand: #157bad;
+  accent-color: var(--brand);
+}
+
+html {
+  caret-color: var(--brand);
+}
+
 body {
-  font-family: Nunito, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   font-size: $global-font-size;
 }
 
-// Show focus styles on keyboard focus
-// :focus-visible {
-// }
+:focus-visible {
+  outline-color: var(--brand);
+}
 
-// ::selection {
-// }
+::selection {
+  background-color: var(--brand);
+}
 
-// ::-moz-selection {
-// }
+::marker {
+  color: var(--brand);
+}
+
+::-webkit-calendar-picker-indicator {
+  color: var(--brand);
+}
+
+::-webkit-clear-button {
+  color: var(--brand);
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  color: var(--brand);
+}
 
 // input::placeholder {}
 // textarea::placeholder {}
