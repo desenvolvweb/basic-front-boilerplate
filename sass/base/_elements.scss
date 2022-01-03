@@ -31,23 +31,14 @@ video {
   max-width: 100%;
 }
 
-img[width],
-iframe[width],
-object[width],
-embed[width],
-video[width] {
-  width: auto; /* Defer to max-width */
-}
-
 img[width][height],
 iframe[width][height],
 object[width][height],
 embed[width][height],
 video[width][height] {
-  height: auto; /* Preserve aspect ratio */
+  height: auto;
 }
 
-/* Let SVG scale without boundaries */
 img[src$=".svg"] {
   height: auto;
   max-width: none;
