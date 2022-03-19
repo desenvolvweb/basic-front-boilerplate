@@ -65,8 +65,13 @@ sub {
 // ==========================================================================
 
 // @see https://twitter.com/argyleink/status/1413850241477005312
+// @see https://css-tricks.com/standardizing-focus-styles-with-css-custom-properties/
 :root {
   --brand: #157bad;
+  --outline-size: max(2px, 0.08em);
+  --outline-style: solid;
+  --outline-color: currentColor;
+
   accent-color: var(--brand);
 }
 
@@ -80,12 +85,14 @@ body {
   font-size: $global-font-size;
 }
 
-:focus-visible {
-  outline-color: var(--brand);
+:focus {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
 }
 
-::selection {
-  background-color: var(--brand);
+:focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
 }
 
 ::marker {
@@ -104,6 +111,9 @@ body {
 ::-webkit-outer-spin-button {
   color: var(--brand);
 }
+
+
+// ::selection {}
 
 // input::placeholder {}
 // textarea::placeholder {}
