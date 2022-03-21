@@ -22,6 +22,22 @@ html {
   }
 }
 
+// @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
+body {
+  line-height: 1.5;
+}
+
+// @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
 // @see https://www.zachleat.com/web/fluid-images/
 img,
 iframe,
