@@ -2,12 +2,13 @@
   "name": "basic-front-boilerplate",
   "version": "1.4.2",
   "description": "Boilerplate básico para projetos front-end com ênfase em HTML/CSS.",
-  "main": "script.js",
+  "source": "index.html",
   "private": true,
   "scripts": {
     "start": "npm run dev",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html",
+    "dev": "parcel",
+    "build": "parcel build",
+    "build-with-reporter": "parcel build --reporter @parcel/reporter-bundle-analyzer",
     "release": "semantic-release"
   },
   "repository": {
@@ -22,17 +23,31 @@
   },
   "homepage": "https://github.com/desenvolvweb/basic-front-boilerplate#readme",
   "devDependencies": {
+    "@parcel/reporter-bundle-analyzer": "^2.4.0",
+    "@parcel/transformer-sass": "^2.4.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-nuke-dist": "^1.0.1",
-    "sass": "^1.23.3",
+    "parcel": "^2.4.0",
     "semantic-release": "^19.0.2"
   },
-  "browserslist": [
-    "last 2 Chrome versions"
-  ]
+  "@parcel/transformer-css": {
+    "drafts": {
+      "customMedia": true
+    }
+  },
+  "targets": {
+    "modern": {
+      "engines": {
+        "browsers": "Chrome 80"
+      }
+    },
+    "legacy": {
+      "engines": {
+        "browsers": "> 0.5%, last 2 versions, not dead"
+      }
+    }
+  }
 }
