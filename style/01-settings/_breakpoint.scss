@@ -1,0 +1,9 @@
+@use '../01-settings/size';
+
+// @see https://desenvolvimentoparaweb.com/css/css-breakpoints-maneira-correta/
+// @see https://drafts.csswg.org/mediaqueries-5/#custom-mq
+// @see https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#syntax_improvements_in_level_4
+@each $name, $size in size.$breakpoint {
+  @custom-media --#{$name}-only (width < #{$size + 'px'});
+  @custom-media --#{$name}-up (width >= #{$size + 'px'});
+}
