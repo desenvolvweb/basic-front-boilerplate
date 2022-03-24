@@ -1,4 +1,4 @@
-$transition-duration: (
+$duration: (
   'default'  : 305ms,
   'complex'  : 385ms,
   'entrance' : 235ms,
@@ -6,7 +6,7 @@ $transition-duration: (
   'fast'     : 150ms,
 );
 
-$transition-function: (
+$function: (
   'ease-in-expo'      : cubic-bezier(.95, .05, .795, .035),
   'ease-out-expo'     : cubic-bezier(.19, 1, .22, 1),
   'ease-in-back'      : cubic-bezier(.6, -.28, .735, .045),
@@ -15,3 +15,13 @@ $transition-function: (
   'ease-in-out-quint' : cubic-bezier(.86, 0, .07, 1),
   'elastic'           : cubic-bezier(.175, .885, .41, 1.46),
 );
+
+:root {
+  @each $name, $duration in $duration {
+    --transition-duration-#{$name}: #{$duration};
+  }
+
+  @each $name, $function in $function {
+    --transition-function-#{$name}: #{$function};
+  }
+}

@@ -31,6 +31,7 @@
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "parcel": "^2.4.0",
+    "postcss-pxtorem": "^6.0.0",
     "semantic-release": "^19.0.2"
   },
   "@parcel/transformer-css": {

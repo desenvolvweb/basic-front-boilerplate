@@ -1,3 +1,14 @@
+@use 'sass:map';
+
+$z-index: (
+  'above'    : 500,
+  'modal'    : 400,
+  'overlay'  : 300,
+  'dropdown' : 200,
+  'default'  : 1,
+  'below'    : -1,
+);
+
 @function z-index($layer) {
-  @return map-get($z-indexes, $layer);
+  @return map.get($z-index, $layer);
 }

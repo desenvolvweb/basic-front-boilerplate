@@ -1,6 +1,8 @@
+@use 'sass:color';
+
 $dpw: (
-  'dpw-primary'   : #3da6c8,
-  'dpw-secondary' : darken(#3da6c8, 12%),
+  'primary'   : #3da6c8,
+  'secondary' : color.adjust(#3da6c8, $lightness: -15%),
 );
 
 $social-media: (
@@ -11,3 +13,13 @@ $social-media: (
   'instagram' : #e4405f,
   'github'    : #333,
 );
+
+:root {
+  @each $name, $value in $dpw {
+    --color-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $social-media {
+    --color-social-media-#{$name}: #{$value};
+  }
+}
