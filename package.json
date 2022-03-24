@@ -32,9 +32,10 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "hint": "^6.1.10",
-    "parcel": "^2.4.0",
-    "postcss-pxtorem": "^6.0.0",
+    "hint": "6.1.10",
+    "parcel": "2.4.0",
+    "postcss-pxtorem": "6.0.0",
+    "prettier": "2.6.0",
     "semantic-release": "^19.0.2"
   },
   "@parcel/transformer-css": {
