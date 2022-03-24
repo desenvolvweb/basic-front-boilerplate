@@ -9,6 +9,7 @@
     "dev": "parcel",
     "build": "parcel build",
     "build-with-reporter": "parcel build --reporter @parcel/reporter-bundle-analyzer",
+    "prepare": "husky install",
     "release": "semantic-release"
   },
   "repository": {
@@ -33,6 +34,8 @@
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "hint": "6.1.10",
+    "husky": "7.0.4",
+    "lint-staged": "12.3.7",
     "parcel": "2.4.0",
     "postcss-pxtorem": "6.0.0",
     "prettier": "2.6.0",
@@ -54,5 +57,9 @@
         "browsers": "> 0.5%, last 2 versions, not dead"
       }
     }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write",
+    "*.scss": "stylelint --syntax=scss"
   }
 }
