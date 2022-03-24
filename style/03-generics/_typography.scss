@@ -1,0 +1,14 @@
+// @see https://moderncss.dev/generating-font-size-css-rules-and-creating-a-fluid-type-scale/
+body {
+  line-height: 1.5;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,47 @@
+// @see https://matthiasott.com/notes/focus-visible-is-here
+:focus:not(:focus-visible) {
+  box-shadow: none;
+  outline: 0;
+}
+
+// @see https://www.tpgi.com/short-note-on-making-your-mark-more-accessible/
+mark {
+  &::before,
+  &::after {
+    content:" [início de texto destacado] ";
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  &::after {
+    content:" [fim de texto destacado] ";
+  }
+}
+
+
+// @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s#accessibility_concerns
+s {
+  &::before,
+  &::after {
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  &::before {
+    content: " [início de texto tachado] ";
+  }
+
+  &::after {
+    content: " [fim de texto tachado] ";
+  }
+}
