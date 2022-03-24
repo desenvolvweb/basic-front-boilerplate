@@ -1,19 +1,19 @@
 $duration: (
-  'default'  : 305ms,
-  'complex'  : 385ms,
-  'entrance' : 235ms,
-  'exit'     : 205ms,
-  'fast'     : 150ms,
+  'default': 305ms,
+  'complex': 385ms,
+  'entrance': 235ms,
+  'exit': 205ms,
+  'fast': 150ms,
 );
 
 $function: (
-  'ease-in-expo'      : cubic-bezier(.95, .05, .795, .035),
-  'ease-out-expo'     : cubic-bezier(.19, 1, .22, 1),
-  'ease-in-back'      : cubic-bezier(.6, -.28, .735, .045),
-  'ease-out-back'     : cubic-bezier(.175, .885, .32, 1.275),
-  'ease-in-out-circ'  : cubic-bezier(.785, .135, .15, .86),
-  'ease-in-out-quint' : cubic-bezier(.86, 0, .07, 1),
-  'elastic'           : cubic-bezier(.175, .885, .41, 1.46),
+  'ease-in-expo': cubic-bezier(0.95, 0.05, 0.795, 0.035),
+  'ease-out-expo': cubic-bezier(0.19, 1, 0.22, 1),
+  'ease-in-back': cubic-bezier(0.6, -0.28, 0.735, 0.045),
+  'ease-out-back': cubic-bezier(0.175, 0.885, 0.32, 1.275),
+  'ease-in-out-circ': cubic-bezier(0.785, 0.135, 0.15, 0.86),
+  'ease-in-out-quint': cubic-bezier(0.86, 0, 0.07, 1),
+  'elastic': cubic-bezier(0.175, 0.885, 0.41, 1.46),
 );
 
 :root {

@@ -1,18 +1,18 @@
 @use 'sass:color';
 
 $dpw: (
-  'brand'     : #3da6c8,
-  'primary'   : #3da6c8,
-  'secondary' : color.adjust(#3da6c8, $lightness: -15%),
+  'brand': #3da6c8,
+  'primary': #3da6c8,
+  'secondary': color.adjust(#3da6c8, $lightness: -15%),
 );
 
 $social-media: (
-  'facebook'  : #3b5998,
-  'twitter'   : #00aced,
-  'linkedin'  : #0077b5,
-  'youtube'   : #cd201f,
-  'instagram' : #e4405f,
-  'github'    : #333,
+  'facebook': #3b5998,
+  'twitter': #00aced,
+  'linkedin': #0077b5,
+  'youtube': #cd201f,
+  'instagram': #e4405f,
+  'github': #333,
 );
 
 :root {

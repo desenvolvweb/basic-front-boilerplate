@@ -1,15 +1,15 @@
 @use '../02-tools/rem' as *;
 
 $size: (
-  'module'    : rem(30),
-  'max-width' : rem(780),
+  'module': rem(30),
+  'max-width': rem(780),
 );
 
 $radius: (
-  'default' : rem(6),
-  'small'   : rem(3),
-  'medium'  : rem(6),
-  'large'   : rem(9),
+  'default': rem(6),
+  'small': rem(3),
+  'medium': rem(6),
+  'large': rem(9),
 );
 
 :root {

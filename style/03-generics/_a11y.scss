@@ -1,7 +1,7 @@
 $outline: (
-  'size'  : max(2px, 0.08em),
-  'style' : solid,
-  'color' : var(--color-secondary),
+  'size': max(2px, 0.08em),
+  'style': solid,
+  'color': var(--color-secondary),
 );
 
 // @see https://twitter.com/argyleink/status/1413850241477005312
@@ -34,7 +34,7 @@ $outline: (
 mark {
   &::before,
   &::after {
-    content:" [início de texto destacado] ";
+    content: ' [início de texto destacado] ';
     clip-path: inset(100%);
     clip: rect(1px, 1px, 1px, 1px);
     height: 1px;
@@ -45,10 +45,9 @@ mark {
   }
 
   &::after {
-    content:" [fim de texto destacado] ";
+    content: ' [fim de texto destacado] ';
   }
 }
-
 
 // @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s#accessibility_concerns
 s {
@@ -64,10 +63,10 @@ s {
   }
 
   &::before {
-    content: " [início de texto tachado] ";
+    content: ' [início de texto tachado] ';
   }
 
   &::after {
-    content: " [fim de texto tachado] ";
+    content: ' [fim de texto tachado] ';
   }
 }

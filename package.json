@@ -41,6 +41,9 @@
     "prettier": "2.6.0",
     "semantic-release": "^19.0.2"
   },
+  "lint-staged": {
+    "*.{js,css,scss,md}": "prettier --write"
+  },
   "@parcel/transformer-css": {
     "drafts": {
       "customMedia": true
@@ -57,9 +60,5 @@
         "browsers": "> 0.5%, last 2 versions, not dead"
       }
     }
-  },
-  "lint-staged": {
-    "*.{js,css,md}": "prettier --write",
-    "*.scss": "stylelint --syntax=scss"
   }
 }

@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 // Foundation for Sites by ZURB
 // foundation.zurb.com
@@ -69,8 +69,9 @@ $rem-base: 16px !default;
 
   // Turn 0rem into 0
   /* stylelint-disable-next-line length-zero-no-unit */
-  @if ($value == 0) { $value: 0; }
+  @if ($value == 0) {
+    $value: 0;
+  }
 
   @return $value;
 }
-
