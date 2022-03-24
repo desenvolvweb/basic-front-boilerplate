@@ -1,7 +1,7 @@
 // @see https://webaim.org/techniques/css/invisiblecontent/#offscreen
 .sr-only {
   height: 1px;
-  left: -10000px;
+  left: -99999px;
   overflow: hidden;
   position: absolute;
   top: auto;

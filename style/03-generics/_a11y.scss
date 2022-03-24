@@ -1,3 +1,29 @@
+$outline: (
+  'size'  : max(2px, 0.08em),
+  'style' : solid,
+  'color' : var(--color-secondary),
+);
+
+// @see https://twitter.com/argyleink/status/1413850241477005312
+// @see https://css-tricks.com/standardizing-focus-styles-with-css-custom-properties/
+:root {
+  @each $name, $value in $outline {
+    --outline-#{$name}: #{$value};
+  }
+
+  accent-color: var(--color-secondary);
+}
+
+:focus {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
 // @see https://matthiasott.com/notes/focus-visible-is-here
 :focus:not(:focus-visible) {
   box-shadow: none;

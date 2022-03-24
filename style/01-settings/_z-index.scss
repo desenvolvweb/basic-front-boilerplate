@@ -1,5 +1,3 @@
-@use 'sass:map';
-
 $z-index: (
   'above'    : 500,
   'modal'    : 400,
@@ -9,6 +7,8 @@ $z-index: (
   'below'    : -1,
 );
 
-@function z-index($layer) {
-  @return map.get($z-index, $layer);
+:root {
+  @each $name, $value in $z-index {
+    --z-index-#{$name}: #{$value};
+  }
 }
