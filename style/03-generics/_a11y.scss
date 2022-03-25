@@ -34,14 +34,14 @@ $outline: (
 mark {
   &::before,
   &::after {
-    content: ' [início de texto destacado] ';
-    clip-path: inset(100%);
     clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(100%);
+    content: ' [início de texto destacado] ';
     height: 1px;
-    width: 1px;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
+    width: 1px;
   }
 
   &::after {
@@ -53,8 +53,8 @@ mark {
 s {
   &::before,
   &::after {
-    clip-path: inset(100%);
     clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(100%);
     height: 1px;
     overflow: hidden;
     position: absolute;

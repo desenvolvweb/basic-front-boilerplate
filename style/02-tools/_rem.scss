@@ -1,4 +1,5 @@
 @use 'sass:math';
+@use 'sass:list';
 
 // Foundation for Sites by ZURB
 // foundation.zurb.com
@@ -29,7 +30,7 @@ $rem-base: 16px !default;
 /// @returns {List} A list of converted values.
 @function rem($values, $base: $rem-base) {
   $rem-values: ();
-  $count: length($values);
+  $count: list.length($values);
 
   @if $base == null {
     $base: $rem-base;

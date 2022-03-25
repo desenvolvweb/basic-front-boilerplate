@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-sass-render-errors",
+    "stylelint-selector-no-empty",
+    "stylelint-high-performance-animation"
+  ],
+  "rules": {
+    "no-empty-source": null,
+    "color-no-invalid-hex": null,
+    "max-empty-lines": [1, { "ignore": ["comments"] }],
+    "plugin/sass-render-errors": true,
+    "plugin/stylelint-selector-no-empty": true,
+    "plugin/no-low-performance-animation-properties": [
+      true,
+      { "severity": "warning" }
+    ]
+  }
+}
