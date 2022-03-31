@@ -1,8 +1,6 @@
-@use '../02-tools/rem' as *;
-
 // TODO: add more values to implement a vertical rhythm
 $font-size: (
-  'default': rem(18),
+  'default': 18px,
 );
 
 // @see https://systemfontstack.com/

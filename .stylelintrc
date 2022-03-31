@@ -14,6 +14,9 @@
     "no-empty-source": null,
     "color-no-invalid-hex": null,
     "max-empty-lines": [1, { "ignore": ["comments"] }],
+    "comment-no-empty": null,
+    "scss/comment-no-empty": null,
+    "scss/dollar-variable-empty-line-before": null,
     "plugin/sass-render-errors": true,
     "plugin/stylelint-selector-no-empty": true,
     "plugin/no-low-performance-animation-properties": [
