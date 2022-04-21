@@ -1,15 +1,9 @@
-$outline: (
-  'size': max(2px, 0.08em),
-  'style': solid,
-  'color': var(--color-secondary),
-);
-
 // @see https://twitter.com/argyleink/status/1413850241477005312
 // @see https://css-tricks.com/standardizing-focus-styles-with-css-custom-properties/
 :root {
-  @each $name, $value in $outline {
-    --outline-#{$name}: #{$value};
-  }
+  --outline-size: max(2px, 0.08em);
+  --outline-style: solid;
+  --outline-color: var(--color-secondary);
 
   accent-color: var(--color-secondary);
 }

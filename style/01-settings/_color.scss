@@ -1,26 +1,17 @@
-@use 'sass:color';
-
-$dpw: (
-  'brand': #3da6c8,
-  'primary': #3da6c8,
-  'secondary': color.adjust(#3da6c8, $lightness: -15%),
-);
-
-$social-media: (
-  'facebook': #3b5998,
-  'twitter': #00aced,
-  'linkedin': #0077b5,
-  'youtube': #cd201f,
-  'instagram': #e4405f,
-  'github': #333,
-);
-
+/* prettier-ignore */
 :root {
-  @each $name, $value in $dpw {
-    --color-#{$name}: #{$value};
-  }
+  --color-brand-hue: 195;
+  --color-brand-saturation: 56%;
+  --color-brand-lightness: 51%;
 
-  @each $name, $value in $social-media {
-    --color-social-media-#{$name}: #{$value};
-  }
+  --color-brand: hsl(var(--color-brand-hue) var(--color-brand-saturation) var(--color-brand-lightness));
+  --color-primary: var(--color-brand);
+  --color-secondary: hsl(var(--color-brand-hue) var(--color-brand-saturation) 35%);
+
+  --color-social-media-facebook: hsl(221 44% 41%);
+  --color-social-media-twitter: hsl(196 100% 46%);
+  --color-social-media-linkedin: hsl(201 100% 35%);
+  --color-social-media-youtube: hsl(0 74% 46%);
+  --color-social-media-instagram: hsl(349 75% 57%);
+  --color-social-media-github: hsl(0 0% 20%);
 }

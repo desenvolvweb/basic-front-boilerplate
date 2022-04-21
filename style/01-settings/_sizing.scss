@@ -1,21 +1,9 @@
-$size: (
-  'module': 30px,
-  'max-width': 780px,
-);
-
-$radius: (
-  'default': 6px,
-  'small': 3px,
-  'medium': 6px,
-  'large': 9px,
-);
-
 :root {
-  @each $name, $value in $size {
-    --size-#{$name}: #{$value};
-  }
+  --size-module: 30px;
+  --size-max-width: 780px;
 
-  @each $name, $value in $radius {
-    --radius-#{$name}: #{$value};
-  }
+  --radius-default: 6px;
+  --radius-small: 3px;
+  --radius-medium: var(--radius-default);
+  --radius-large: 9px;
 }

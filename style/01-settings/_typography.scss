@@ -1,31 +1,12 @@
-// TODO: add more values to implement a vertical rhythm
-$font-size: (
-  'default': 18px,
-);
-
-// @see https://systemfontstack.com/
-$font-family: (
-  'sans-serif':
-    '-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif',
-  'serif':
-    'Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol',
-  'mono': 'Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace',
-);
-
-$line-height: (
-  'default': 1.5,
-);
-
+/* prettier-ignore */
 :root {
-  @each $name, $value in $font-size {
-    --font-size-#{$name}: #{$value};
-  }
+  // TODO: add more values to implement a vertical rhythm
+  --font-size-default: 18px;
 
-  @each $name, $value in $font-family {
-    --font-family-#{$name}: #{$value};
-  }
+  --line-height-default: 1.5;
 
-  @each $name, $value in $line-height {
-    --line-height-#{$name}: #{$value};
-  }
+  // @see https://systemfontstack.com/
+  --font-family-sans-serif: -apple-system, blinkmacsystemfont, avenir next, avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif;
+  --font-family-serif: times new roman, droid serif, times, source serif pro, serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  --font-family-mono: menlo, consolas, monaco, liberation mono, lucida console, monospace;
 }
