@@ -15,6 +15,8 @@
     "color-no-invalid-hex": null,
     "max-empty-lines": [1, { "ignore": ["comments"] }],
     "comment-no-empty": null,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
     "scss/comment-no-empty": null,
     "scss/dollar-variable-empty-line-before": null,
     "plugin/sass-render-errors": true,
