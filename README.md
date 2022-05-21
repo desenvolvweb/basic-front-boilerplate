@@ -2,6 +2,8 @@
 
 Boilerplate básico para projetos front-end com ênfase em HTML e CSS.
 
+[![GitHub version](https://badge.fury.io/gh/conventional-changelog%2Fstandard-version.svg)](https://badge.fury.io/gh/conventional-changelog%2Fstandard-version)
+
 ## Pré-requisitos
 
 - Node.js
