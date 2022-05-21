@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,21 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "sass": "^1.23.3"
   },
+  "dependencies": {
+    "semantic-release": "^19.0.2"
+  },
   "browserslist": [
     "last 2 Chrome versions"
+  ],
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/npm",
+    "@semantic-release/git"
   ]
 }
