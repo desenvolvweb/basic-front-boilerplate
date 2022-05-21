@@ -12,6 +12,7 @@
   ],
   "rules": {
     "no-empty-source": null,
+    "custom-property-pattern": "^([a-z][a-z0-9]*)((-|--)[a-z0-9]+)*$",
     "color-no-invalid-hex": null,
     "color-named": null,
     "hue-degree-notation": null,
@@ -20,6 +21,7 @@
     "comment-empty-line-before": null,
     "custom-property-empty-line-before": null,
     "selector-no-qualifying-type": null,
+    "function-no-unknown": null,
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": [true, { "ignoreAtRules": ["layer"] }],
     "scss/comment-no-empty": null,
