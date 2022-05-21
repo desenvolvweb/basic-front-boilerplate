@@ -16,14 +16,9 @@
 - Node.js
 - npm
 
-## Indicações
-
-- nvm
-  - Execute `nvm use` para usar a versão Node recomendada para o projeto
-
 ## Uso
 
-O projeto usa [Parcel](https://parceljs.org/), uma build tool rápida, eficiente e que não precisa de configuração (_zero configuration_).
+O BFB usa [Parcel](https://parceljs.org/), uma build tool rápida, eficiente e que não precisa de configuração (_zero configuration_).
 
 Em função disso, oferece suporte a CSS e JavaScript modernos, Sass, e todas as outras modernidades/comonidades da ferramenta.
 
@@ -39,11 +34,33 @@ Em função disso, oferece suporte a CSS e JavaScript modernos, Sass, e todas as
 
 Basicamente, depois da instalação inicial de pacotes, só é preciso executar `npm start` e começar a mexer no projeto como se não houvesse amanhã.
 
-Parcel oferece _hot reload_: conforme alterações de código são feitas, ele reconstrói automaticamente os arquivos alterados e atualiza o navegador.
+Parcel oferece _hot reload_: conforme alterações de código são feitas, ele faz rebuild automático dos arquivos alterados e atualiza o navegador.
 
-O arquivo `style/index.scss` importa todos os demais (partials), então, sempre que criar um novo arquivo na estrutura, lembre-se de importá-lo (dentro dos conceitos da arquitetura ITCSS).
+O arquivo `style/index.scss` carrega todos os demais (partials), então, sempre que criar um novo arquivo na estrutura, lembre-se de importá-lo -- dentro dos conceitos da arquitetura ITCSS.
 
-Recomenda-se que este boilerplate seja usado primariamente para testes e estudos.
+> 💡 **Não sabe ITCSS?**<br>
+> Caso não saiba o que é ou como usar ITCSS, conheça nosso curso para aprender mais sobre como estruturar seu CSS de maneira profissional.<br>
+> Para saber mais, [cadastre seu e-mail na lista preferencial](https://www.cssalemdosensocomum.com.br/) para ser avisado quando abriremos uma nova turma.
+
+## Tweaks
+
+### CSS Cascade Layers
+
+Caso queira usar [CSS Cascade Layers](https://css-tricks.com/css-cascade-layers/), o plugin [PostCSS Cascade Layers](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-cascade-layers) já está disponível no BFB.
+
+Para ativá-lo, adicione o seguinte código ao arquivo `.postcssrc` (dentro do nó `plugins`):
+
+`"@csstools/postcss-cascade-layers": true,`
+
+## Solução de Problemas
+
+### Pacotes Node não estão sendo instalados
+
+Caso aconteçam erros ao tentar instalar os pacotes Node, pode ser algo relacionado à compatibilidade.
+
+Recomendamos o uso do [nvm](https://github.com/nvm-sh/nvm) para controlar as versões do Node.
+
+Então, você pode executar `nvm use` para ativar a mesma versão do Node usada para desenvolver o BFB.
 
 ## Licença
 

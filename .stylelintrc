@@ -21,7 +21,7 @@
     "custom-property-empty-line-before": null,
     "selector-no-qualifying-type": null,
     "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": true,
+    "scss/at-rule-no-unknown": [true, { "ignoreAtRules": ["layer"] }],
     "scss/comment-no-empty": null,
     "scss/dollar-variable-empty-line-before": null,
     "scss/double-slash-comment-empty-line-before": null,
