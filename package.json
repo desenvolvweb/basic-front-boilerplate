@@ -1,6 +1,6 @@
 {
   "name": "basic-front-boilerplate",
-  "version": "1.4.2-beta.1",
+  "version": "1.4.2",
   "description": "Boilerplate básico para projetos front-end com ênfase em HTML/CSS.",
   "main": "script.js",
   "private": true,
