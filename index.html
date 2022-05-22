@@ -13,28 +13,554 @@
         word-break: break-word;
       }
     </style>
-    <style>
-      body {
-        background-color: aliceblue;
+
+    <style class="DELETE_ME">
+      .l-main {
+        margin: 0 auto;
+        max-width: var(--size-max-width);
+        padding: var(--space-m);
       }
 
-      .l-main {
-        display: grid;
-        place-items: center;
+      .l-main a {
+        color: var(--color-secondary);
+        display: inline-block;
+        text-decoration: underline var(--color-secondary);
+        text-underline-offset: 2px;
+        transition: transform var(--transition-duration-complex)
+          var(--transition-function-ease-out-expo);
+      }
+
+      .l-main a:hover {
+        color: var(--color-primary);
+        text-decoration-color: var(--color-primary);
+        transform: translateY(-2.5px);
+      }
+
+      .l-header {
+        margin-bottom: var(--space-m);
+      }
+
+      .l-header h1 {
+        line-height: 1;
+        margin-bottom: 0;
+        text-align: center;
+      }
+
+      .l-features > * + * {
+        margin-top: var(--space-s);
+      }
+
+      .c-feature {
+        background-color: #fdfeff;
+        border-radius: var(--radius-default);
+        border: 1px solid #e0e8ef;
+        padding: var(--space-s);
+      }
+
+      .c-feature {
+        background-color: rgba(255 255 255 / 0.5);
+        border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+        border-radius: var(--radius-default);
+        border-right: 2px rgba(40, 40, 40, 0.35) solid;
+        border: 2px rgba(255, 255, 255, 0.4) solid;
+      }
+
+      .c-feature__title {
+        font-size: var(--font-step-2);
+        line-height: 1;
+      }
+
+      .c-feature *:last-child {
+        margin-bottom: 0;
+      }
+
+      .c-feature code {
+        background-color: #f7f7f9;
+        border-radius: var(--radius-medium);
+        border: 0.0625rem solid #e1e1e8;
+        color: #da345e;
+        font-family: var(--font-family-mono);
+        font-size: 75%;
+        padding: 3px 5px;
+      }
+
+      .l-page-animation {
+        height: 100vh;
+        overflow: hidden;
+        pointer-events: none;
+        position: fixed;
+        z-index: -1;
+      }
+
+      .l-page-animation svg {
+        height: 100%;
+        inset: 0;
+        opacity: 0.25;
+        position: fixed;
+        width: 100%;
+      }
+
+      .l-footer {
+        display: flex;
+        font-size: var(--font-step--1);
+        justify-content: center;
+        margin-top: var(--space-m);
+      }
+
+      .l-footer .l-footer__link {
+        align-items: center;
+        display: inline-flex;
+      }
+
+      .l-footer__image {
+        align-self: center;
+        margin-left: var(--space-3xs);
+        transform: translateY(1px);
       }
     </style>
   </head>
 
   <body>
-    <main class="l-main">
-      <h1>BFB2</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-        sapiente, assumenda in placeat sit odit molestiae ratione! Tempore,
-        laudantium iste voluptatibus, consequuntur dolorem et impedit quibusdam
-        facere, atque accusamus obcaecati.
-      </p>
-    </main>
+    <div class="DELETE_ME">
+      <main class="l-main">
+        <header class="l-header">
+          <h1>BFB v2</h1>
+        </header>
+
+        <p>
+          <strong>Basic Front Boilerplate</strong> (ou <strong>BFB</strong>,
+          para os íntimos) é a maneira mais fácil de se iniciar um projeto
+          front-end <strong> para testes e estudos</strong>.
+        </p>
+
+        <p>
+          Um boilerplate que leva performance a sério, levemente opinativo,
+          baseado no
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://parceljs.org/"
+            >Parcel</a
+          >, que permite usar recursos de Web moderna <em>hoje mesmo</em>.
+        </p>
+
+        <section class="l-features">
+          <article class="c-feature">
+            <h2 class="c-feature__title">Estrutura Robusta</h2>
+
+            <div class="c-feature__content">
+              <p>
+                Arquitetura
+                <a
+                  href="https://itcss.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ITCSS</a
+                >
+                para organização dos estilos de maneira eficiente e profissional
+                através do uso de
+                <a
+                  href="https://sass-lang.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Sass</a
+                >
+                (com a nova sintaxe <code>@use</code>/<code>@forward</code>).
+              </p>
+
+              <p>
+                Base de códigos sadia com o uso de code formatters e linters,
+                adotando convenções internacionais para padronização de commits
+                e versionamento.
+              </p>
+            </div>
+          </article>
+
+          <article class="c-feature">
+            <h2 class="c-feature__title">Gostinho de Futuro</h2>
+
+            <div class="c-feature__content">
+              <p>
+                Comece a usar <em>hoje mesmo</em>
+                <a
+                  href="https://www.w3.org/TR/css-logical-1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Logical Properties</a
+                >
+                (<code>padding-block</code>, <code>margin-inline</code> etc.),
+                CSS Color Module
+                <a
+                  href="https://www.w3.org/TR/css-color-4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Level 4</a
+                >
+                e
+                <a
+                  href="https://www.w3.org/TR/css-color-5/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Level 5</a
+                >
+                (<code>lab()</code>, <code>lch()</code>,
+                <code>color-mix()</code> e mais) e Media Queries
+                <a
+                  href="https://www.w3.org/TR/mediaqueries-4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Level 4</a
+                >
+                e
+                <a
+                  href="https://www.w3.org/TR/mediaqueries-5/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Level 5</a
+                >
+                com Custom Media Queries, com a novíssima sintaxe de range
+                (<code>
+                  @custom-media --modern (30em &lt;= width &lt;= 50em)</code
+                >).
+              </p>
+            </div>
+          </article>
+
+          <article class="c-feature">
+            <h2 class="c-feature__title">JavaScript à vontade</h2>
+
+            <div class="c-feature__content">
+              <p>
+                <a
+                  href="https://parceljs.org/languages/javascript/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Transpilação</a
+                >
+                de JSX, TypeScript, CoffeeScript e Flow <em>out of the box</em>.
+              </p>
+
+              <p>
+                Suporte a ES modules, CommonJS, Dynamic import e Workers -- web
+                workers, service workers e worklets (incluindo
+                <a
+                  href="https://developers.google.com/web/updates/2018/01/paintapi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  paint worklets de CSS Houdini </a
+                >).
+              </p>
+            </div>
+          </article>
+
+          <article class="c-feature">
+            <h2 class="c-feature__title">Extensível as F*ck</h2>
+
+            <div class="c-feature__content">
+              <p>
+                Centenas de possibilidades para extensão através de
+                <a
+                  href="https://postcss.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >PostCSS</a
+                >
+                e seus plugins, com
+                <a
+                  href="https://babeljs.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Babel</a
+                >
+                para transformações experimentais ou personalizadas.
+              </p>
+
+              <p>
+                Habilitado de fábrica conversor automático de
+                <code>px</code> para <code>rem</code> e com opcional ativável
+                para
+                <a
+                  href="https://www.w3.org/TR/css-cascade-5/#layering"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Cascade Layers</a
+                >
+                (<code>@layer</code>).
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <footer class="l-footer">
+          Um oferecimento
+
+          <a
+            href="https://desenvolvimentoparaweb.com/"
+            title="Acessar o blog desenvolvimento para web"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="l-footer__link"
+          >
+            <img
+              src="data:image/png;base64,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"
+              width="50"
+              height="21"
+              alt="dpw"
+              class="l-footer__image"
+            />
+          </a>
+        </footer>
+      </main>
+
+      <div class="l-page-animation" aria-hidden="true">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient
+              id="Gradient1"
+              cx="50%"
+              cy="50%"
+              fx="0.441602%"
+              fy="50%"
+              r=".5"
+            >
+              <animate
+                attributeName="fx"
+                dur="234s"
+                values="0%;3%;0%"
+                repeatCount="indefinite"
+              ></animate>
+              <stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop>
+              <stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop>
+            </radialGradient>
+            <radialGradient
+              id="Gradient2"
+              cx="50%"
+              cy="50%"
+              fx="2.68147%"
+              fy="50%"
+              r=".5"
+            >
+              <animate
+                attributeName="fx"
+                dur="223.5s"
+                values="0%;3%;0%"
+                repeatCount="indefinite"
+              ></animate>
+              <stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop>
+              <stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop>
+            </radialGradient>
+            <radialGradient
+              id="Gradient3"
+              cx="50%"
+              cy="50%"
+              fx="0.836536%"
+              fy="50%"
+              r=".5"
+            >
+              <animate
+                attributeName="fx"
+                dur="221.5s"
+                values="0%;3%;0%"
+                repeatCount="indefinite"
+              ></animate>
+              <stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop>
+              <stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop>
+            </radialGradient>
+            <radialGradient
+              id="Gradient4"
+              cx="50%"
+              cy="50%"
+              fx="4.56417%"
+              fy="50%"
+              r=".5"
+            >
+              <animate
+                attributeName="fx"
+                dur="223s"
+                values="0%;5%;0%"
+                repeatCount="indefinite"
+              ></animate>
+              <stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop>
+              <stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop>
+            </radialGradient>
+            <radialGradient
+              id="Gradient5"
+              cx="50%"
+              cy="50%"
+              fx="2.65405%"
+              fy="50%"
+              r=".5"
+            >
+              <animate
+                attributeName="fx"
+                dur="224.5s"
+                values="0%;5%;0%"
+                repeatCount="indefinite"
+              ></animate>
+              <stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop>
+              <stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop>
+            </radialGradient>
+            <radialGradient
+              id="Gradient6"
+              cx="50%"
+              cy="50%"
+              fx="0.981338%"
+              fy="50%"
+              r=".5"
+            >
+              <animate
+                attributeName="fx"
+                dur="225.5s"
+                values="0%;5%;0%"
+                repeatCount="indefinite"
+              ></animate>
+              <stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop>
+              <stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop>
+            </radialGradient>
+          </defs>
+          <rect
+            x="13.744%"
+            y="1.18473%"
+            width="100%"
+            height="100%"
+            fill="url(#Gradient1)"
+            transform="rotate(334.41 50 50)"
+          >
+            <animate
+              attributeName="x"
+              dur="220s"
+              values="25%;0%;25%"
+              repeatCount="indefinite"
+            ></animate>
+            <animate
+              attributeName="y"
+              dur="221s"
+              values="0%;25%;0%"
+              repeatCount="indefinite"
+            ></animate>
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 50 50"
+              to="360 50 50"
+              dur="160s"
+              repeatCount="indefinite"
+            ></animateTransform>
+          </rect>
+          <rect
+            x="-2.17916%"
+            y="35.4267%"
+            width="100%"
+            height="100%"
+            fill="url(#Gradient2)"
+            transform="rotate(255.072 50 50)"
+          >
+            <animate
+              attributeName="x"
+              dur="223s"
+              values="-25%;0%;-25%"
+              repeatCount="indefinite"
+            ></animate>
+            <animate
+              attributeName="y"
+              dur="224s"
+              values="0%;50%;0%"
+              repeatCount="indefinite"
+            ></animate>
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 50 50"
+              to="360 50 50"
+              dur="175s"
+              repeatCount="indefinite"
+            ></animateTransform>
+          </rect>
+          <rect
+            x="9.00483%"
+            y="14.5733%"
+            width="100%"
+            height="100%"
+            fill="url(#Gradient3)"
+            transform="rotate(139.903 50 50)"
+          >
+            <animate
+              attributeName="x"
+              dur="225s"
+              values="0%;25%;0%"
+              repeatCount="indefinite"
+            ></animate>
+            <animate
+              attributeName="y"
+              dur="212s"
+              values="0%;25%;0%"
+              repeatCount="indefinite"
+            ></animate>
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="360 50 50"
+              to="0 50 50"
+              dur="155s"
+              repeatCount="indefinite"
+            ></animateTransform>
+          </rect>
+        </svg>
+      </div>
+
+      <a
+        href="https://github.com/desenvolvweb/basic-front-boilerplate/"
+        class="github-corner"
+        aria-hidden="true"
+        ><svg
+          width="80"
+          height="80"
+          viewBox="0 0 250 250"
+          style="
+            fill: #151513;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            border: 0;
+            right: 0;
+          "
+          aria-hidden="true"
+        >
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+          <path
+            d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+            fill="currentColor"
+            style="transform-origin: 130px 106px"
+            class="octo-arm"
+          ></path>
+          <path
+            d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+            fill="currentColor"
+            class="octo-body"
+          ></path></svg
+      ></a>
+      <style>
+        .github-corner:hover .octo-arm {
+          animation: octocat-wave 560ms ease-in-out;
+        }
+
+        @keyframes octocat-wave {
+          0%,
+          100% {
+            transform: rotate(0);
+          }
+          20%,
+          60% {
+            transform: rotate(-25deg);
+          }
+          40%,
+          80% {
+            transform: rotate(10deg);
+          }
+        }
+      </style>
+    </div>
 
     <script type="module" src="js/index.js"></script>
   </body>

@@ -61,12 +61,12 @@
   "targets": {
     "modern": {
       "engines": {
-        "browsers": "Chrome 80"
+        "browsers": "last 1 year"
       }
     },
     "legacy": {
       "engines": {
-        "browsers": "> 0.5%, last 2 versions, not dead"
+        "browsers": "> 0.5%, last 4 versions, not dead"
       }
     }
   }

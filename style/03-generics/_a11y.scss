@@ -57,10 +57,10 @@ s {
   }
 
   &::before {
-    content: ' [início de texto tachado] ';
+    content: ' [início de texto rasurado] ';
   }
 
   &::after {
-    content: ' [fim de texto tachado] ';
+    content: ' [fim de texto rasurado] ';
   }
 }
