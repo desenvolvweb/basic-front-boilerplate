@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/CSS-239120?style=flat&logo=css3&color=0191d5">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white">
-  <img src="https://img.shields.io/badge/NVIDIA-RTX3070-76B900?style=flat&logo=nvidia&logoColor=white">
+  <img src="https://img.shields.io/github/v/release/desenvolvweb/basic-front-boilerplate?style=flat-square">
 </p>
 <hr />
 
