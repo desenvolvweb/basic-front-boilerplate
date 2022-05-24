@@ -1,0 +1,66 @@
+// @see https://twitter.com/argyleink/status/1413850241477005312
+// @see https://css-tricks.com/standardizing-focus-styles-with-css-custom-properties/
+:root {
+  --outline-size: max(2px, 0.08em);
+  --outline-style: solid;
+  --outline-color: var(--color-secondary);
+
+  accent-color: var(--color-secondary);
+}
+
+:focus {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+// @see https://matthiasott.com/notes/focus-visible-is-here
+:focus:not(:focus-visible) {
+  box-shadow: none;
+  outline: 0;
+}
+
+// @see https://www.tpgi.com/short-note-on-making-your-mark-more-accessible/
+mark {
+  &::before,
+  &::after {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(100%);
+    content: ' [início de texto destacado] ';
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  &::after {
+    content: ' [fim de texto destacado] ';
+  }
+}
+
+// @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s#accessibility_concerns
+s {
+  &::before,
+  &::after {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  &::before {
+    content: ' [início de texto rasurado] ';
+  }
+
+  &::after {
+    content: ' [fim de texto rasurado] ';
+  }
+}

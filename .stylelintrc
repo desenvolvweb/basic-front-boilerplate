@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [
+    "stylelint-sass-render-errors",
+    "stylelint-selector-no-empty",
+    "stylelint-high-performance-animation"
+  ],
+  "rules": {
+    "no-empty-source": null,
+    "custom-property-pattern": "^([a-z][a-z0-9]*)((-|--)[a-z0-9]+)*$",
+    "color-no-invalid-hex": null,
+    "color-named": null,
+    "hue-degree-notation": null,
+    "max-empty-lines": [1, { "ignore": ["comments"] }],
+    "comment-no-empty": null,
+    "comment-empty-line-before": null,
+    "custom-property-empty-line-before": null,
+    "selector-no-qualifying-type": null,
+    "function-no-unknown": null,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": [true, { "ignoreAtRules": ["layer"] }],
+    "scss/comment-no-empty": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "plugin/sass-render-errors": true,
+    "plugin/stylelint-selector-no-empty": true,
+    "plugin/no-low-performance-animation-properties": [
+      true,
+      { "severity": "warning" }
+    ]
+  }
+}

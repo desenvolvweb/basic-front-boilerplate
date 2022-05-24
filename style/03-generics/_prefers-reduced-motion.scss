@@ -1,0 +1,14 @@
+// @see: https://polypane.app/blog/the-complete-guide-to-css-media-queries/#implementing-a-dark-mode#implementing-reduced-motion
+@media (prefers-reduced-motion: reduce) {
+  body *,
+  body *::before,
+  body *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: -1ms !important;
+    transition-duration: 1ms !important;
+  }
+}

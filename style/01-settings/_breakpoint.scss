@@ -1,0 +1,18 @@
+$breakpoint: (
+  'small': 768,
+  'medium': 1024,
+  'large': 1440,
+  'extra-large': 1920,
+);
+
+// @see https://desenvolvimentoparaweb.com/css/css-breakpoints-maneira-correta/
+// @see https://drafts.csswg.org/mediaqueries-5/#custom-mq
+// @see https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#syntax_improvements_in_level_4
+//
+// TODO: use em units after the Parcel calculation bug it's solved
+// TODO: concatenate breakpoints
+// TODO: make "between" variation
+@each $name, $size in $breakpoint {
+  @custom-media --#{$name}-down (width < #{$size + 'px'});
+  @custom-media --#{$name}-up (width >= #{$size + 'px'});
+}

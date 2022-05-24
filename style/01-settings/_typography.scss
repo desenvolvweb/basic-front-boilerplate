@@ -1,0 +1,38 @@
+/* prettier-ignore */
+
+@font-face {
+  font-display: swap;
+  font-family: Oswald;
+  font-weight: 200 700;
+  src: url('../font/Oswald.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+:root {
+  /* @link https://utopia.fyi/type/calculator?c=640,18,1.2,1440,24,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+  --font-step--2: clamp(0.78rem, calc(0.73rem + 0.13vw), 0.84rem);
+  --font-step--1: clamp(0.94rem, calc(0.79rem + 0.38vw), 1.13rem);
+  --font-step-0: clamp(1.13rem, calc(0.83rem + 0.75vw), 1.5rem);
+  --font-step-1: clamp(1.35rem, calc(0.83rem + 1.3vw), 2rem);
+  --font-step-2: clamp(1.62rem, calc(0.78rem + 2.09vw), 2.67rem);
+  --font-step-3: clamp(1.94rem, calc(0.66rem + 3.22vw), 3.55rem);
+  --font-step-4: clamp(2.33rem, calc(0.41rem + 4.81vw), 4.74rem);
+  --font-step-5: clamp(2.8rem, calc(-0.01rem + 7.03vw), 6.31rem);
+
+  // TODO: implement a vertical rhythm
+  --font-size-default: var(--font-step-0);
+  --line-height-default: 1.5;
+
+  // @see https://systemfontstack.com/
+  --font-family-sans-serif: -apple-system, blinkmacsystemfont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial,
+    sans-serif;
+  --font-family-serif: times new roman, droid serif, times, source serif pro,
+    serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  --font-family-mono: menlo, consolas, monaco, liberation mono, lucida console,
+    monospace;
+
+  --font-family-oswald: oswald, var(--font-family-sans-serif);
+}

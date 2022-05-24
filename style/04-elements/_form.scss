@@ -1,0 +1,28 @@
+html {
+  caret-color: var(--color-secondary);
+}
+
+label {
+  cursor: pointer;
+}
+
+// ==========================================================================
+// Placeholder
+// ==========================================================================
+
+::placeholder {
+  color: var(--color-secondary);
+}
+
+// ==========================================================================
+// Calendar
+// ==========================================================================
+
+::-webkit-calendar-picker-indicator {
+  color: var(--color-brand);
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  color: var(--color-brand);
+}

@@ -2,12 +2,14 @@
   "name": "basic-front-boilerplate",
   "version": "1.4.2",
   "description": "Boilerplate básico para projetos front-end com ênfase em HTML/CSS.",
-  "main": "script.js",
+  "source": "index.html",
   "private": true,
   "scripts": {
     "start": "npm run dev",
-    "dev": "parcel index.html",
-    "build": "parcel build index.html",
+    "dev": "parcel",
+    "build": "parcel build",
+    "build-with-reporter": "parcel build --reporter @parcel/reporter-bundle-analyzer",
+    "prepare": "husky install",
     "release": "semantic-release"
   },
   "repository": {
@@ -22,17 +24,53 @@
   },
   "homepage": "https://github.com/desenvolvweb/basic-front-boilerplate#readme",
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/commit-analyzer": "^9.0.2",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^8.0.4",
-    "@semantic-release/release-notes-generator": "^10.0.3",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-nuke-dist": "^1.0.1",
-    "sass": "^1.23.3",
-    "semantic-release": "^19.0.2"
+    "@commitlint/cli": "17.0.0",
+    "@commitlint/config-conventional": "17.0.0",
+    "@csstools/postcss-cascade-layers": "1.0.2",
+    "@hint/connector-local": "3.2.16",
+    "@hint/formatter-codeframe": "3.1.26",
+    "@open-turo/commitlint-config-conventional": "1.0.2",
+    "@parcel/reporter-bundle-analyzer": "2.4.0",
+    "@parcel/transformer-sass": "2.4.0",
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/commit-analyzer": "9.0.2",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.0.4",
+    "@semantic-release/release-notes-generator": "10.0.3",
+    "hint": "6.1.10",
+    "husky": "7.0.4",
+    "lint-staged": "12.3.7",
+    "parcel": "2.4.0",
+    "postcss-pxtorem": "6.0.0",
+    "prettier": "2.6.0",
+    "semantic-release": "19.0.2",
+    "stylelint": "14.6.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-sass-guidelines": "9.0.1",
+    "stylelint-config-standard": "25.0.0",
+    "stylelint-config-standard-scss": "3.0.0",
+    "stylelint-high-performance-animation": "1.6.0",
+    "stylelint-sass-render-errors": "3.0.0",
+    "stylelint-selector-no-empty": "1.0.8"
   },
-  "browserslist": [
-    "last 2 Chrome versions"
-  ]
+  "lint-staged": {
+    "*.{js,css,scss,md}": "prettier --write"
+  },
+  "@parcel/transformer-css": {
+    "drafts": {
+      "customMedia": true
+    }
+  },
+  "targets": {
+    "modern": {
+      "engines": {
+        "browsers": "last 1 year"
+      }
+    },
+    "legacy": {
+      "engines": {
+        "browsers": "> 0.5%, last 4 versions, not dead"
+      }
+    }
+  }
 }

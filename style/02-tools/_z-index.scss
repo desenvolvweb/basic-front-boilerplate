@@ -1,0 +1,3 @@
+@function z-index($z-index-name) {
+  @return var(--z-index-#{$z-index-name});
+}

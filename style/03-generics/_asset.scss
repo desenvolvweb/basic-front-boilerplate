@@ -1,0 +1,22 @@
+// @see https://www.zachleat.com/web/fluid-images/
+img,
+iframe,
+object,
+embed,
+video {
+  max-width: 100%;
+}
+
+img[width][height],
+iframe[width][height],
+object[width][height],
+embed[width][height],
+video[width][height] {
+  height: auto;
+}
+
+img[src$='.svg'] {
+  height: auto;
+  max-width: none;
+  width: 100%;
+}

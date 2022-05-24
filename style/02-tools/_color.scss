@@ -1,0 +1,5 @@
+// e.g. color(primary), color(social-media-instagram) etc.
+// @see style/01-settings/_color.scss
+@function color($color-name) {
+  @return var(--color-#{$color-name});
+}
