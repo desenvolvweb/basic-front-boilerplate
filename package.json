@@ -43,7 +43,7 @@
     "parcel": "2.4.0",
     "postcss-pxtorem": "6.0.0",
     "prettier": "2.6.0",
-    "semantic-release": "19.0.2",
+    "semantic-release": "19.0.3",
     "stylelint": "14.6.0",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-sass-guidelines": "9.0.1",
