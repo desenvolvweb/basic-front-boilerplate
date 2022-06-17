@@ -1,6 +1,6 @@
 {
   "name": "basic-front-boilerplate",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Boilerplate básico para projetos front-end com ênfase em HTML/CSS.",
   "source": "index.html",
   "private": true,
