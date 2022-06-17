@@ -30,6 +30,7 @@
     "@hint/connector-local": "3.2.16",
     "@hint/formatter-codeframe": "3.1.26",
     "@open-turo/commitlint-config-conventional": "1.0.2",
+    "@parcel/css": "1.10.1",
     "@parcel/reporter-bundle-analyzer": "2.4.0",
     "@parcel/transformer-sass": "2.4.0",
     "@semantic-release/changelog": "6.0.1",
