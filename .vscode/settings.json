@@ -1,0 +1,13 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.ignoreDisables": true,
+  "stylelint.validate": ["css", "scss", "postcss"],
+  "stylelint.snippet": ["css", "scss", "postcss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  }
+}
