@@ -55,7 +55,11 @@
     "stylelint-selector-no-empty": "1.0.8"
   },
   "lint-staged": {
-    "*.{js,css,scss,md}": "prettier --write"
+    "*.{html,js,md}": "prettier --write",
+    "*.{css,scss}": [
+      "prettier --write",
+      "stylelint --fix"
+    ]
   },
   "@parcel/transformer-css": {
     "drafts": {
