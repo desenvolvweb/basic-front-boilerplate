@@ -177,7 +177,7 @@
           </article>
 
           <article class="c-feature">
-            <h2 class="c-feature__title">Gostinho de Futuro</h2>
+            <h2 class="c-feature__title">CSS Modernoso</h2>
 
             <div class="c-feature__content">
               <p>
@@ -204,7 +204,7 @@
                   >Level 5</a
                 >
                 (<code>lab()</code>, <code>lch()</code>,
-                <code>color-mix()</code> e mais) e Media Queries
+                <code>color-mix()</code> etc.), Media Queries
                 <a
                   href="https://www.w3.org/TR/mediaqueries-4/"
                   target="_blank"
@@ -218,16 +218,22 @@
                   rel="noopener noreferrer"
                   >Level 5</a
                 >
-                com Custom Media Queries, com a novíssima sintaxe de range
-                (<code>
+                com Custom Media Queries com a novíssima sintaxe de range (<code>
                   @custom-media --modern (30em &lt;= width &lt;= 50em)</code
-                >).
+                >), além das incríveis
+                <a
+                  href="https://www.w3.org/TR/css-cascade-5/#layering"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >CSS Cascade Layers</a
+                >
+                (<code>@layer</code>).
               </p>
             </div>
           </article>
 
           <article class="c-feature">
-            <h2 class="c-feature__title">JavaScript à vontade</h2>
+            <h2 class="c-feature__title">JavaScript à Vontade</h2>
 
             <div class="c-feature__content">
               <p>
@@ -255,7 +261,7 @@
           </article>
 
           <article class="c-feature">
-            <h2 class="c-feature__title">Extensível as F*ck</h2>
+            <h2 class="c-feature__title">Extensível <em>as F*ck</em></h2>
 
             <div class="c-feature__content">
               <p>
@@ -277,16 +283,8 @@
               </p>
 
               <p>
-                Habilitado de fábrica conversor automático de
-                <code>px</code> para <code>rem</code> e com opcional ativável
-                para
-                <a
-                  href="https://www.w3.org/TR/css-cascade-5/#layering"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >CSS Cascade Layers</a
-                >
-                (<code>@layer</code>).
+                E habilitado de fábrica com conversor automático de
+                <code>px</code> para <code>rem</code>.
               </p>
             </div>
           </article>
@@ -550,10 +548,12 @@
           100% {
             transform: rotate(0);
           }
+
           20%,
           60% {
             transform: rotate(-25deg);
           }
+
           40%,
           80% {
             transform: rotate(10deg);
