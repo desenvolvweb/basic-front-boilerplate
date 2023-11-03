@@ -1,9 +1,31 @@
-@charset 'utf-8';
+@use 'sass:meta';
 
-@forward '01-settings';
-@forward '02-tools';
-@forward '03-generics';
-@forward '04-elements';
-@forward '05-objects';
-@forward '06-components';
-@forward '99-utilities';
+@layer settings, tools, generics, elements, objects, components, utilities;
+
+@layer settings {
+  @include meta.load-css('01-settings');
+}
+
+@layer tools {
+  @include meta.load-css('02-tools');
+}
+
+@layer generics {
+  @include meta.load-css('03-generics');
+}
+
+@layer elements {
+  @include meta.load-css('04-elements');
+}
+
+@layer objects {
+  @include meta.load-css('05-objects');
+}
+
+@layer components {
+  @include meta.load-css('06-components');
+}
+
+@layer utilities {
+  @include meta.load-css('99-utilities');
+}
