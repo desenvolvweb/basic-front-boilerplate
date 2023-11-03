@@ -52,7 +52,7 @@
     "stylelint-config-standard-scss": "3.0.0",
     "stylelint-high-performance-animation": "1.6.0",
     "stylelint-sass-render-errors": "3.0.0",
-    "stylelint-selector-no-empty": "1.0.8"
+    "stylelint-selector-no-empty": "1.0.9"
   },
   "lint-staged": {
     "*.{html,js,md}": "prettier --write",
