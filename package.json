@@ -24,34 +24,32 @@
   },
   "homepage": "https://github.com/desenvolvweb/basic-front-boilerplate#readme",
   "devDependencies": {
-    "@commitlint/cli": "17.0.0",
-    "@commitlint/config-conventional": "17.0.0",
-    "@hint/connector-local": "3.2.16",
-    "@hint/formatter-codeframe": "3.1.26",
-    "@open-turo/commitlint-config-conventional": "1.0.2",
-    "@parcel/css": "1.10.1",
-    "@parcel/reporter-bundle-analyzer": "2.4.0",
-    "@parcel/transformer-sass": "2.4.0",
-    "@semantic-release/changelog": "6.0.1",
-    "@semantic-release/commit-analyzer": "9.0.2",
+    "@commitlint/cli": "18.4.3",
+    "@commitlint/config-conventional": "18.4.3",
+    "@hint/connector-local": "3.2.27",
+    "@hint/formatter-codeframe": "3.1.35",
+    "@open-turo/commitlint-config-conventional": "1.1.0",
+    "@parcel/css": "1.14.0",
+    "@parcel/reporter-bundle-analyzer": "2.10.3",
+    "@parcel/transformer-sass": "2.10.3",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "11.1.0",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "8.0.4",
-    "@semantic-release/release-notes-generator": "10.0.3",
-    "hint": "6.1.10",
-    "husky": "7.0.4",
-    "lint-staged": "12.3.7",
-    "parcel": "2.4.0",
+    "@semantic-release/github": "9.2.3",
+    "@semantic-release/release-notes-generator": "12.1.0",
+    "hint": "7.1.8",
+    "husky": "8.0.3",
+    "lint-staged": "15.1.0",
+    "parcel": "2.10.3",
     "postcss-pxtorem": "6.0.0",
-    "prettier": "2.6.0",
-    "semantic-release": "19.0.3",
-    "stylelint": "14.6.0",
-    "stylelint-config-prettier": "9.0.3",
-    "stylelint-config-sass-guidelines": "9.0.1",
-    "stylelint-config-standard": "25.0.0",
-    "stylelint-config-standard-scss": "3.0.0",
-    "stylelint-high-performance-animation": "1.6.0",
-    "stylelint-sass-render-errors": "3.0.0",
-    "stylelint-selector-no-empty": "1.0.8"
+    "prettier": "3.1.0",
+    "semantic-release": "22.0.8",
+    "stylelint": "15.2.0",
+    "stylelint-config-sass-guidelines": "10.0.0",
+    "stylelint-config-standard": "30.0.0",
+    "stylelint-config-standard-scss": "7.0.1",
+    "stylelint-high-performance-animation": "1.9.0",
+    "stylelint-sass-render-errors": "3.2.0"
   },
   "lint-staged": {
     "*.{html,js,md}": "prettier --write",
@@ -73,7 +71,7 @@
     },
     "legacy": {
       "engines": {
-        "browsers": "> 0.5%, last 4 versions, not dead"
+        "browsers": "> 0.5%, last 3 versions, not dead"
       }
     }
   }
