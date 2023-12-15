@@ -42,16 +42,6 @@ O arquivo `style/index.scss` carrega todos os demais (partials), então, sempre 
 > Caso não saiba o que é ou como usar ITCSS, conheça nosso curso para aprender mais sobre como estruturar seu CSS de maneira profissional.<br>
 > Para saber mais, [cadastre seu e-mail na lista preferencial](https://www.cssalemdosensocomum.com.br/) para ser avisado quando abriremos uma nova turma.
 
-## Tweaks
-
-### CSS Cascade Layers
-
-Caso queira usar [CSS Cascade Layers](https://css-tricks.com/css-cascade-layers/), o plugin [PostCSS Cascade Layers](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-cascade-layers) já está disponível no BFB.
-
-Para ativá-lo, adicione o seguinte código ao arquivo `.postcssrc` (dentro do nó `plugins`):
-
-`"@csstools/postcss-cascade-layers": true,`
-
 ## Solução de Problemas
 
 ### Pacotes Node não estão sendo instalados
