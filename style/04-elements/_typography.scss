@@ -1,3 +1,7 @@
+* {
+  text-wrap: pretty;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
@@ -24,6 +28,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-oswald);
+  text-wrap: balance;
 }
 
 h1 {
