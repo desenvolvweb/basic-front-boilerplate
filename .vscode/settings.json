@@ -8,6 +8,6 @@
   "stylelint.validate": ["css", "scss", "postcss"],
   "stylelint.snippet": ["css", "scss", "postcss"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": "explicit"
   }
 }

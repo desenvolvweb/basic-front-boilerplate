@@ -2,6 +2,13 @@ html {
   caret-color: var(--color-secondary);
 }
 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 label {
   cursor: pointer;
 }
