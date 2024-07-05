@@ -7,6 +7,15 @@ video {
   max-width: 100%;
 }
 
+// @see https://x.com/csswizardry/status/1717841334462005661
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: italic;
+  shape-margin: 0.75rem;
+  vertical-align: middle;
+}
+
 img[width][height],
 iframe[width][height],
 object[width][height],
