@@ -5,6 +5,7 @@
         "*",
         "!letter-spacing"
       ]
-    }
+    },
+    "postcss-custom-media": {}
   }
 }
